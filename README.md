@@ -1,9 +1,22 @@
-# Job-Portal-Application
- Designed and developed a full-stack job portal system using Spring Boot (REST APIs) and MySQL for backend data management. Implemented JWT-based authentication authorization to ensure secure user sessions.  Developed responsive frontend using HTML, CSS, and JavaScript
+# 💼 Job Portal Application
 
-User Authentication & Authorization – Secure registration/login for job seekers, employers, and admins with role-based access control (JWT/session-based).
-User Profiles – Job seekers can create/edit profiles with resume upload, skills, experience, and education; employers can manage company profiles.
-Job Posting & Management – Employers can create, edit, publish, and close job listings with details like salary, location, job type, and requirements.
-Job Search & Filtering – Advanced search with filters (location, category, salary range, experience level, job type) and keyword search.
-Application System – Job seekers can apply directly, upload resumes/cover letters, and track application status.
-Application Tracking Dashboard – Employers can view, shortlist, and manage applicants for each job posting.
+Designed and developed a full-stack job portal system using Spring Boot (REST APIs) and MySQL for backend data management. Implemented JWT-based authentication authorization to ensure secure user sessions. Developed responsive frontend using HTML, CSS, and JavaScript
+
+## Tech Stack
+
+**Backend:** Java 17, Spring Boot 3.5, Spring Security, Spring Data JPA, MySQL, JWT (jjwt)
+**Frontend:** HTML, CSS, JavaScript (vanilla, fetch API)
+
+## Features
+
+- **User Registration & Login** – JWT-based authentication; users sign up as a `JOB_SEEKER` or `RECRUITER`
+- **Job Listings** – Browse all posted jobs (protected route, requires login)
+- **Post a Job** – REST endpoint for creating new job listings
+- **Apply to a Job** – Upload a resume through the frontend apply form
+- **Application Records** – Applications are stored with a status field (`APPLIED`, `SHORTLISTED`, `REJECTED`)
+
+
+
+## License
+
+MIT LICENSE
