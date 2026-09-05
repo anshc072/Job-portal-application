@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <div class="main-container">
+
+    <!-- Logo -->
+    <div class="logo">
+        💼 Job Portal
+    </div>
+
+    <!-- Login Card -->
+    <div class="login-card">
+
+    <h2>Login</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+    <p class="register-text">
+        Don't have account? <a href="register.html">Register</a>
+    </p>
+
+
+    <!-- ✅ POPUP HTML MUST BE HERE -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <!-- JS Always Last -->
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
